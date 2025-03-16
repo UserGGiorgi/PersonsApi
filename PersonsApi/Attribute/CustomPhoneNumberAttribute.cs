@@ -9,7 +9,7 @@ namespace PersonsApi.Attribute
         private const int MaxLength = 50;
         private static readonly Regex NumericRegex = new Regex(@"^\+?\d+$", RegexOptions.Compiled);
 
-        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
         {
             if (value is string strValue)
             {

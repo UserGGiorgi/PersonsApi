@@ -12,6 +12,6 @@ namespace PersonsApi.Dtos
 
         [Required]
         [CustomPhoneNumber(ErrorMessage = "The number must contain only digits and may start with a '+' sign")]
-        public string Number { get; set; }
+        public string Number { get; set; } = null!;
     }
 }

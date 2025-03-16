@@ -11,10 +11,10 @@ namespace PersonsApi.Models
 
         public int PersonId { get; set; }
 
-        public Person Person { get; set; }
+        public Person Person { get; set; } = null!;
 
         public int RelatedPersonId { get; set; }
 
-        public Person RelatedPerson { get; set; }
+        public Person RelatedPerson { get; set; } = null!;
     }
 }

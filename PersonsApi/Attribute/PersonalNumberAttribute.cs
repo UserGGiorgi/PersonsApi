@@ -9,7 +9,7 @@ namespace PersonsApi.Attribute
         private const int RequiredLength = 11;
         private static readonly Regex PersonalNumberRegex = new(@"^\d{11}$", RegexOptions.Compiled);
 
-        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
         {
             if (value is string personalNumber)
             {
